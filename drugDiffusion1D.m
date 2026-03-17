@@ -23,13 +23,6 @@ for t_idx = 1:Nt-1
     C(Nx,t_idx+1) = C(Nx-1,t_idx+1);
 end
 
-imagesc(C)              % Creates color map
-colorbar                % Shows concentration scale
-xlabel('Time Step')
-ylabel('Spatial Position')
-title('Drug Diffusion Over Time')
-
-colormap(jet)           % Nice gradient (blue → red)
 
 end
 % ______________________________________________
