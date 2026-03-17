@@ -23,6 +23,22 @@ for t_idx = 1:Nt-1
     C(Nx,t_idx+1) = C(Nx-1,t_idx+1);
 end
 
-end
+imagesc(C)              % Creates color map
+colorbar                % Shows concentration scale
+xlabel('Time Step')
+ylabel('Spatial Position')
+title('Drug Diffusion Over Time')
 
-% Use this in the command window. [C] = drugDiffusion1D(Put the inputs you have)
+colormap(jet)           % Nice gradient (blue → red)
+
+end
+% ______________________________________________
+% Use these in the command window. 
+% [C] = drugDiffusion1D(Put the inputs you have)
+% figure()
+% imagesc(C)         Creates color map
+% colorbar           Shows concentration scale
+% xlabel('Time Step')
+% ylabel('Spatial Position')
+% title('Drug Diffusion Over Time')
+% colormap(jet)   Nice gradient (blue → red)
