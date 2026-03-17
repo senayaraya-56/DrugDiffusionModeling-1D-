@@ -1,0 +1,10 @@
+The outputs generated will be with the following function/inputs
+C = drugDiffusion1D(0.1, 1, 5, 50, 20000, 0.05);
+While following this format
+[C] = drugDiffusion1D(D, L, T, Nx, Nt, decay)
+D: Diffusion Constant
+L: Length of whatever the drug is flowing through. 
+T: Total time the drug is diffusing. The time that the simulation is going through.
+Nx: The number of points that we are dividing the length into.
+Nt: The number of points that we are dividing the time into.
+decay: The decay Constant, how fast the drug is breaking down/dissolving in the simulation.
